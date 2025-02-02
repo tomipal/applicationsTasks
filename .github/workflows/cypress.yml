@@ -32,6 +32,6 @@ jobs:
       - name: Run Cypress tests
         run: |
           docker run --rm \
-          -v $ {{github.workspace}}:/app \
+          -v ${{github.workspace}}:/app \
           -w /app \
           cypress-tests:latest
