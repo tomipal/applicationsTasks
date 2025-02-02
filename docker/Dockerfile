@@ -8,4 +8,6 @@ RUN npm install
 
 COPY . .
 
+ENV OUTPUT_DIR=/app/output
+
 CMD ["npm", "run", "cy:run"]
