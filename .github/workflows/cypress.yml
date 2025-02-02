@@ -26,6 +26,8 @@ jobs:
           file: docker/Dockerfile
           push: false
           tags: cypress-tests:latest
+          build-args: |
+            CACHEBUST=$(date +%s)
         env:
           CI: true
 
