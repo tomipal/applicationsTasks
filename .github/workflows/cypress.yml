@@ -21,7 +21,7 @@ jobs:
 
       - name: Build and run Cypress tests
         run: |
-         docker buildx build --load --tag cypress-tests
+         docker build -t cypress-tests:latest -f docker/Dockerfile .
 
       - name: List Docker images
         run: docker images
