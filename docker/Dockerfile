@@ -1,4 +1,4 @@
-FROM cypress/browsers:node22.13.1-chrome91-ff89
+FROM cypress/browsers:node-20.14.0-chrome-125.0.6422.141-1-ff-126.0.1-edge-125.0.2535.85-1
 
 WORKDIR /app
 
