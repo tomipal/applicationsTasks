@@ -25,10 +25,13 @@ jobs:
           context: docker
           file: docker/Dockerfile
           push: false
-          tags: cypress-tests:latest
+          tags: cypress-tests
         env:
           CI: true
 
       - name: Run Cypress tests
         run: |
-          docker run --rm cypress-tests
+          docker run --rm \
+          -v $ {{github.workspace}}:/app \
+          -w /app \
+          cypress-tests
