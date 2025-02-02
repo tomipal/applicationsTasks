@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: Dockerfile
+          file: docker/Dockerfile
           push: false
           tags: cypress-tests
         env:
