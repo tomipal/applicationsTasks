@@ -29,6 +29,9 @@ jobs:
         env:
           CI: true
 
+      - name: List Docker images
+        run: docker images
+
       - name: Run Cypress tests
         run: |
           docker run --rm \
