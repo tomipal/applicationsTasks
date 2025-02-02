@@ -25,13 +25,6 @@ jobs:
         env:
           CI: true
 
-      - name: List Docker images
-        run: docker images
-
-      - name: Check Cypress version
-        run: |
-          docker run --rm cypress-tests npx cypress --version 
-
       - name: Run Cypress tests
         run: |
           docker run --rm cypress-tests:latest
