@@ -17,11 +17,13 @@ describe('deposit spec', () => {
       cy.get('.btn.btn-default').click()
       cy.get('.error.ng-binding').contains('Deposit Successful').should('be.visible')
       sumDeposit += +amount;
+
+      cy.wait(500)
     }
 
     cy.get('.ng-binding').contains(sumDeposit).should('be.visible')
 
-    cy.wait(2000)
+    cy.wait(1000)
 
     cy.contains('Transactions').click()
     cy.get('tr td:nth-child(2)').then(getTexts).should(vals => {

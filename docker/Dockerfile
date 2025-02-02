@@ -2,10 +2,6 @@ FROM cypress/browsers:node-20.14.0-chrome-125.0.6422.141-1-ff-126.0.1-edge-125.0
 
 WORKDIR /app
 
-ARG OUTPUT_DIR=output
-
-RUN mkdir -p OUTPUT_DIR
-
 COPY package*.json ./
 
 RUN npm install

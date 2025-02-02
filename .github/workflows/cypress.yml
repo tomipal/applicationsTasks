@@ -22,9 +22,15 @@ jobs:
       - name: Build and run Cypress tests
         run: |
          docker build -t cypress-tests:latest -f docker/Dockerfile .
+        env:
+          CI: true
 
       - name: List Docker images
         run: docker images
+
+      - name: Check Cypress version
+        run: |
+          docker run --rm cypress-tests npx cypress --version 
 
       - name: Run Cypress tests
         run: |
