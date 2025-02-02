@@ -1,0 +1,70 @@
+node_modules
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Maven
+target/
+!.mvn/timing.properties
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+*.ipr
+
+# Eclipse
+.settings/
+.classpath
+.project
+.metadata
+bin/
+target/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+*.nb-gradle/
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Other files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.tar
+*.gz
+*.7z
+*.rar
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+*.user
+*.sublime-workspace
+*.sublime-project
